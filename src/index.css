@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-extrabold	font-secondary uppercase text-white py-2 px-8 bg-primary-green rounded-md inline-block shadow-[0px_5px_0px_0px_rgba(51,51,51,1)];
+  }
+
+  .nav-item-animation {
+    @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-green hover:after:w-full hover:text-primary-green transition-colors ease-in-out duration-700 after:transition-width after:ease-in-out after:duration-700
+  }
+
+  .responsive-container {
+    @apply max-w-mobile md:max-w-tablet lg:max-w-desktop
+  }
+}
