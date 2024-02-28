@@ -7,7 +7,7 @@ interface ChooseOptionProps {
 
 export default function ChooseOption({ img, alt, title, description }: ChooseOptionProps) {
   return (
-    <div className='flex flex-col gap-4 items-center p-6'>
+    <div className='flex flex-col gap-3 items-center'>
       <div className='p-4 bg-white rounded-full shadow-[0px_0px_10px_1px_rgba(139,210,160,0.4)]'>
         <img className='w-14' src={img} alt={alt} />
       </div>

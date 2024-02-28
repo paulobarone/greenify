@@ -10,6 +10,7 @@ export default {
         'primary-green': '#55B76B',
         'accent-green': '#8BD2A0',
         'gray': '#333333',
+        'light-gray': '#767676',
         'white': '#ffffff'
       },
       fontFamily: {
