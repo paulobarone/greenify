@@ -21,7 +21,7 @@ export default function Home() {
               <h2 className='text-2xl font-bold text-primary-green'>Compras Sustentáveis</h2>
             </div>
             <p className='text-sm text-center font-secondary'>&quot;Descubra a Sustentabilidade. Abraçe o Greenify. <br /> Seu Refúgio Eco-amigável para Compras Conscientes.&quot;</p>
-            <a className='btn' href='#'>Shop Now</a>
+            <a className='btn' href='#'>Ver Loja</a>
           </div>
           <img className='translate-x-1/4 sm:translate-x-1/2 sm:max-w-lg' src={homeImg} alt='Sacola sustentável' />
 
