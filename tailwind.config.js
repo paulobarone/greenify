@@ -22,8 +22,11 @@ export default {
       },
       maxWidth: {
         'mobile': '25rem',
-        'tablet': '56.25rem',
-        'desktop': '68.75rem'
+        'tablet': '60rem',
+        'desktop': '75rem'
+      },
+      animation: {
+        'press': 'spin 3s linear infinite',
       }
     },
   },

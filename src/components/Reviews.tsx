@@ -2,6 +2,9 @@ import starIcon from '../assets/icons/star.svg'
 import smileIcon from '../assets/icons/smile.svg'
 import leftArrow from '../assets/icons/left.svg'
 import rightArrow from '../assets/icons/right.svg'
+import plantIcon from '../assets/background-icons/plant-3.svg'
+import recycleIcon from '../assets/background-icons/recycle.svg'
+import windTurbineIcon from '../assets/background-icons/wind-turbine.svg'
 import { reviews } from '../data/reviews'
 import { useEffect, useState } from 'react'
 import useWindowWidth from '../hooks/useWindowWidth'
@@ -34,15 +37,14 @@ export default function Reviews() {
 
     setMaxPagination(Math.ceil(reviews.length / reviewsPerPage))
     setPageReviews(reviews.slice(startIndex, endIndex))
-
-    console.log(startIndex, endIndex)
-    console.log(reviewsPerPage)
   }, [page, reviews])
 
   return (
     <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
+      <img className='absolute top-0 w-[8%] -translate-y-1/2 min-w-12 max-w-[175px] left-[10%]' src={recycleIcon} />
+      <img className='absolute top-0 w-[10%] -translate-y-1/2 min-w-20 max-w-[175px] right-[10%]' src={plantIcon} />
       <div className='responsive-container flex flex-col gap-8'>
-        <h2 className='font-secondary text-2xl font-bold text-center'>Avaliações dos Clientes</h2>
+        <h1 className='font-secondary text-2xl font-bold text-center'>Avaliações dos Clientes</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {pageReviews.length !== 0 && pageReviews.map((item, index) => (
             <div className='relative p-4 border-2 border-primary-green rounded-2xl flex flex-col items-center justify-center gap-8 max-w-[360px]' key={index}>
@@ -79,6 +81,7 @@ export default function Reviews() {
           </button>
         </div>
       </div>
+      <img className='absolute -bottom-2 right-[30%] w-[20%] max-w-[90px] -z-10 hidden md:block' src={windTurbineIcon} />
     </section>
   )
 }

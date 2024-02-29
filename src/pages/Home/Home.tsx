@@ -9,6 +9,7 @@ import ChooseOption from '../../components/ChooseOption'
 import ProductCard from '../../components/ProductCard'
 import { chooseOptions } from '../../data/chooseOptions'
 import { products } from '../../data/products'
+import { blogs } from '../../data/blogs'
 import Reviews from '../../components/Reviews'
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
       </section>
       <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
         <div className='responsive-container flex flex-col items-center gap-8'>
-          <h2 className='text-gray text-2xl font-bold text-center'>Por que escolher o Greenify?</h2>
+          <h1 className='text-gray text-2xl font-bold text-center'>Por que escolher o Greenify?</h1>
           <div className='grid grid-cols-1 gap-8'>
             {chooseOptions.map((item, index) => (
               <ChooseOption img={item.img} alt={item.alt} title={item.title} description={item.description} key={index} />
@@ -49,7 +50,7 @@ export default function Home() {
       <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
         <img className='absolute -top-10 right-[10%] translate-x-1/2 -z-10 min-w-56 w-[25%] max-w-[300px]' src={plantIcon} />
         <div className='responsive-container flex flex-col items-center gap-8'>
-          <h2 className='text-gray text-2xl font-bold text-center'>Nossos Produtos Sustentáveis Mais Vendidos</h2>
+          <h1 className='text-gray text-2xl font-bold text-center'>Nossos Produtos Sustentáveis Mais Vendidos</h1>
           <div className='grid grid-cols-1 gap-12'>
             {products.map((item, index) => (
               <ProductCard img={item.img} alt={item.alt} name={item.name} regularPrice={item.regularPrice} discountedPrice={item.discountedPrice} reviews={item.reviews} key={index} />
@@ -61,7 +62,7 @@ export default function Home() {
       <section className='py-6 px-2 flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover bg-blend-overlay relative' style={{ backgroundImage: `url(${aboutBackground})`, backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
         <img className='absolute -top-4 right-[8%] w-[12%] max-w-[140px]' src={butterflyIcon} />
         <div className='responsive-container flex flex-col justify-center items-center gap-8'>
-          <h2 className='text-gray text-2xl font-bold text-center'>Sobre nós</h2>
+          <h1 className='text-gray text-2xl font-bold text-center'>Sobre nós</h1>
           <div className='bg-white rounded-lg py-2 px-5'>
             <img src={logoIcon} alt='Logotipo do Greenify' />
           </div>
@@ -78,6 +79,24 @@ export default function Home() {
         </div>
       </section>
       <Reviews />
+      <section className='bg-primary-green py-6 px-2 flex flex-col justify-center items-center relative'>
+        <img className='brightness-0 invert grayscale absolute top-3 left-[10%] -rotate-45 min-w-8 w-[5%] max-w-[90px]' src={butterflyIcon} />
+        <div className='responsive-container flex flex-col items-center justify-center gap-8'>
+          <h1 className='text-white text-2xl font-bold text-center'>Blogs</h1>
+          <div className='flex flex-wrap justify-center gap-6'>
+            {blogs.map((item, index) => (
+              <div className='rounded-3xl bg-white max-w-[300px] xl:max-w-[360px] flex flex-col items-center shadow-xl' key={index}>
+                <img className='w-full rounded-3xl' src={item.img} alt={item.alt} />
+                <div className='flex flex-col items-center gap-4 p-4 justify-between w-full h-full'>
+                  <h3 className='text-center text-gray font-secondary font-semibold text-2xl'>{item.title}</h3>
+                  <p className='text-center text-gray font-secondary'>{item.description}</p>
+                  <button className='btn'>Saiba mais</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   )
 }
