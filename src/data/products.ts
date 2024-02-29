@@ -40,7 +40,7 @@ export const products = [
     reviews: 1256
   },
   {
-    img: './src/assets/products/backpack.png',
+    img: './src/assets/products/bag.png',
     alt: 'Uma mulher segurando uma sacola de compras de juta com flores dentro',
     name: 'Sacola de compras de juta',
     regularPrice: 89,

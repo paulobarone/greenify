@@ -42,7 +42,7 @@ export default function Header() {
     <header className='flex justify-between p-3 items-center'>
       <div className='flex items-center gap-3'>
         <img className='cursor-pointer' onClick={handleMenuOpen} src={menuIcon} alt='Menu' />
-        <img className='w-28 cursor-pointer' src={logoIcon} alt='Logo Greenify' />
+        <img className='w-28 cursor-pointer' src={logoIcon} alt='Logotipo do Greenify' />
       </div>
       <nav className={`${menuOpen ? 'flex' : 'hidden'} gap-4 absolute top-16 left-1/2 -translate-x-1/2 flex-col items-center bg-white w-4/5 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-lg py-6 px-4 z-10`}>
         {navBarItems.map((item, index) => (
