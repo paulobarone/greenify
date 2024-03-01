@@ -90,7 +90,7 @@ export default function Home() {
           <h1 className='text-white text-2xl font-bold text-center'>Blogs</h1>
           <div className='flex flex-wrap lg:flex-nowrap lg:justify-between justify-center gap-6 w-full'>
             {blogs.map((item, index) => (
-              <div className='rounded-3xl bg-white max-w-[280px] xl:max-w-[350px] flex flex-col items-center shadow-xl' key={index}>
+              <div className='rounded-3xl bg-white max-w-[280px] xl:max-w-[350px] flex flex-col items-center shadow-xl relative z-20' key={index}>
                 <img className='w-full rounded-3xl' src={item.img} alt={item.alt} />
                 <div className='flex flex-col items-center gap-4 p-4 justify-between w-full h-full'>
                   <h3 className='text-center text-gray font-secondary font-semibold text-2xl'>{item.title}</h3>

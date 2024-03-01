@@ -9,7 +9,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ img, alt, name, discountedPrice, regularPrice, reviews }: ProductCardProps) {
   return (
-    <div className='max-w-[350px] flex flex-col gap-4 items-center justify-between relative z-20'>
+    <div className='max-w-[350px] flex flex-col gap-4 items-center justify-between'>
       <img className='w-full' src={img} alt={alt} />
       <span className='text-2xl font-semibold font-secondary text-start w-full'>{name}</span>
       <div className='flex justify-between w-full items-center'>
