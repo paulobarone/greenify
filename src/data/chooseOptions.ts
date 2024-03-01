@@ -2,7 +2,7 @@ export const chooseOptions = [
   {
     img: './src/assets/choose/products.svg',
     alt: 'Ilustração de produtos sustentáveis',
-    title: 'Produtos Sustentáveis',
+    title: 'Sustentabilidade nos Produtos',
     description: 'Explore nossa seleção cuidadosamente elaborada de produtos sustentáveis, cada um projetado para reduzir sua pegada de carbono.'
   },
   {

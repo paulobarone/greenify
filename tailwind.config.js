@@ -23,7 +23,8 @@ export default {
       maxWidth: {
         'mobile': '25rem',
         'tablet': '60rem',
-        'desktop': '75rem'
+        'desktop': '56.25rem',
+        'large-desktop': '75rem'
       },
       animation: {
         'press': 'spin 3s linear infinite',
