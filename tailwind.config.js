@@ -14,7 +14,6 @@ export default {
         'white': '#ffffff'
       },
       fontFamily: {
-        primary: ['Montserrat', 'sans-serif'],
         secondary: ['Lato', 'sans-serif']
       },
       transitionProperty: {
