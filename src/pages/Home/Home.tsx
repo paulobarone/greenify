@@ -20,20 +20,20 @@ export default function Home() {
       <Header />
       <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
         <div className='responsive-container flex flex-col items-center gap-8 w-full lg:flex-row lg:justify-between'>
-          <div className='flex flex-col items-center gap-4 md:gap-8 w-full'>
-            <div className='flex flex-col items-center w-full gap-2'>
+          <div className='flex flex-col items-center gap-4 w-full lg:gap-8 lg:items-start'>
+            <div className='flex flex-col items-center w-full gap-2 lg:items-start'>
               <h1 className='text-2xl font-bold md:text-5xl'>Bem-vindo ao Greenify</h1>
               <span className='text-2xl md:text-4xl'>Seu destino de</span>
               <h2 className='text-2xl md:text-5xl font-bold text-primary-green'>Compras Sustentáveis</h2>
             </div>
-            <p className='text-sm text-center font-secondary'>&quot;Descubra a Sustentabilidade. Abraçe o Greenify. <br /> Seu Refúgio Eco-amigável para Compras Conscientes.&quot;</p>
+            <p className='text-sm text-center font-secondary lg:text-start'>&quot;Descubra a Sustentabilidade. Abraçe o Greenify. <br /> Seu Refúgio Eco-amigável para Compras Conscientes.&quot;</p>
             <a className='btn' href='#'>Ver Loja</a>
           </div>
           <img className='translate-x-1/4 sm:translate-x-1/2 md:translate-x-1/3 sm:max-w-lg lg:translate-x-0' src={homeImg} alt='Sacola sustentável' />
 
-          <img className='absolute top-44 right-[10%] w-[10%] max-w-24 -z-10' src={butterflyIcon} />
-          <img className='absolute top-60 left-[20%] w-[8%] max-w-12 opacity-60 -z-10' src={butterflyIcon} />
-          <img className='absolute bottom-16 left-[10%] w-[15%] max-w-36 -z-10' src={bulbIcon} />
+          <img className='absolute top-44 right-[10%] w-[10%] max-w-24 -z-10 lg:top-8 lg:right-[55%]' src={butterflyIcon} />
+          <img className='absolute top-60 left-[20%] w-[8%] max-w-12 opacity-60 -z-10 lg:top-[26rem] lg:left-[25%]' src={butterflyIcon} />
+          <img className='absolute bottom-16 left-[10%] w-[15%] max-w-36 -z-10 lg:-bottom-28' src={bulbIcon} />
         </div>
       </section>
       <div className='w-full flex justify-center'>
