@@ -40,7 +40,7 @@ export default function Contact() {
   }, [alert])
 
   return (
-    <section className='py-16 px-2 flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover bg-blend-overlay relative' style={{ backgroundImage: `url(${contactBackground})`, backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
+    <section id='contact' className='py-16 px-2 flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover bg-blend-overlay relative' style={{ backgroundImage: `url(${contactBackground})`, backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
       {alert &&
         <Alert className='fixed top-10 z-30 animate-bounce' severity='success'>Inscrito com sucesso!</Alert>
       }
@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
       </div>
       <img className='absolute bottom-10 rotate-[110deg] w-[8%] translate-y-1/2 min-w-12 max-w-[175px] brightness-75 left-[10%] z-10' src={plantIcon} />
-      <img className='absolute bottom-0 w-[50%] translate-y-1/2 min-w-12 max-w-[220px] brightness-150 right-[5%] z-10' src={planetIcon} />
+      <img className='absolute -bottom-20 w-[50%] animate-spin-slow min-w-12 max-w-[220px] brightness-150 right-[5%] z-10' src={planetIcon} />
     </section>
   )
 }

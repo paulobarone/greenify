@@ -11,20 +11,20 @@ export default function Footer() {
   const pagesItems = [
     {
       name: 'Início',
-      path: '#'
+      path: '#home'
     },
     {
       name: 'Loja',
-      path: '#'
+      path: '#shop'
     },
     {
       name: 'Sobre nós',
-      path: '#'
+      path: '#about'
     },
     {
       name: 'Contato',
-      path: '#'
-    },
+      path: '#contact'
+    }
   ]
 
   const contactItems = [

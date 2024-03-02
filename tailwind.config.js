@@ -24,6 +24,9 @@ export default {
         'tablet': '60rem',
         'desktop': '56.25rem',
         'large-desktop': '75rem'
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       }
     },
   },

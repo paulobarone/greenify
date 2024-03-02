@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
+      <section id='home' className='py-6 px-2 flex flex-col justify-center items-center relative'>
         <div className='responsive-container flex flex-col items-center gap-8 w-full lg:flex-row lg:justify-between'>
           <div className='flex flex-col items-center gap-4 w-full lg:gap-8 lg:items-start'>
             <div className='flex flex-col items-center w-full gap-2 lg:items-start'>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className='w-full flex justify-center'>
         <div className='w-2/5 max-w-60 h-1 bg-zinc-500 rounded-lg my-8'></div>
       </div>
-      <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
+      <section id='chooses' className='py-6 px-2 flex flex-col justify-center items-center relative'>
         <div className='responsive-container flex flex-col items-center gap-8'>
           <h1 className='text-gray text-2xl font-bold text-center'>Por que escolher o Greenify?</h1>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
@@ -52,7 +52,7 @@ export default function Home() {
       <div className='w-full flex justify-center'>
         <div className='w-2/5 max-w-60 h-1 bg-zinc-500 rounded-lg my-8'></div>
       </div>
-      <section className='pt-6 pb-16 px-2 flex flex-col justify-center items-center relative'>
+      <section id='shop' className='pt-6 pb-16 px-2 flex flex-col justify-center items-center relative'>
         <img className='absolute -top-10 right-[10%] translate-x-1/2 -z-10 min-w-56 w-[25%] max-w-[300px]' src={plantIcon} />
         <div className='responsive-container flex flex-col items-center gap-8'>
           <h1 className='text-gray text-2xl font-bold text-center'>Nossos Produtos Sustentáveis Mais Vendidos</h1>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <img className='absolute -bottom-28 left-[10%] -translate-x-1/2 -z-10 min-w-56 w-[25%] max-w-[300px] rotate-45' src={plantIcon} />
       </section>
-      <section className='py-6 px-2 flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover bg-blend-overlay relative' style={{ backgroundImage: `url(${aboutBackground})`, backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
+      <section id='about' className='py-6 px-2 flex flex-col justify-center items-center bg-center bg-no-repeat bg-cover bg-blend-overlay relative' style={{ backgroundImage: `url(${aboutBackground})`, backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
         <img className='absolute -top-4 right-[8%] w-[12%] max-w-[140px]' src={butterflyIcon} />
         <div className='responsive-container flex flex-col justify-center items-center gap-8 lg:max-w-[900px]'>
           <h1 className='text-gray text-2xl font-bold text-center'>Sobre nós</h1>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
       <Reviews />
-      <section className='bg-primary-green py-6 px-2 flex flex-col justify-center items-center relative'>
+      <section id='blogs' className='bg-primary-green py-6 px-2 flex flex-col justify-center items-center relative'>
         <img className='brightness-0 invert grayscale absolute top-3 left-[10%] -rotate-45 min-w-8 w-[5%] max-w-[90px]' src={butterflyIcon} />
         <div className='responsive-container flex flex-col items-center justify-center gap-8 w-full'>
           <h1 className='text-white text-2xl font-bold text-center'>Blogs</h1>

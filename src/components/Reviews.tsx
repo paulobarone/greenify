@@ -44,7 +44,7 @@ export default function Reviews() {
   }, [windowWidth])
 
   return (
-    <section className='py-6 px-2 flex flex-col justify-center items-center relative'>
+    <section id='reviews' className='py-6 px-2 flex flex-col justify-center items-center relative'>
       <img className='absolute top-0 w-[8%] -translate-y-1/2 min-w-12 max-w-[175px] left-[10%]' src={recycleIcon} />
       <img className='absolute top-0 w-[10%] -translate-y-1/2 min-w-20 max-w-[175px] right-[10%]' src={plantIcon} />
       <div className='responsive-container flex flex-col gap-8 w-full'>

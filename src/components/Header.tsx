@@ -9,20 +9,20 @@ export default function Header() {
   const navBarItems = [
     {
       name: 'Início',
-      path: '#'
+      path: '#home'
     },
     {
       name: 'Loja',
-      path: '#'
+      path: '#shop'
     },
     {
       name: 'Sobre nós',
-      path: '#'
+      path: '#about'
     },
     {
       name: 'Contato',
-      path: '#'
-    },
+      path: '#contact'
+    }
   ]
 
   const handleMenuOpen = () => {
