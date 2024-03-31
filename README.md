@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Durante o desenvolvimento do projeto "Greenify", meu foco principal foi a criação de uma landing page dedicada à sustentabilidade. Durante o desenvolvimento do projeto, meu foco foi na criação de uma landing page seguindo os padrões de código.
+Durante o desenvolvimento do projeto "Greenify", meu foco principal foi a criação de uma landing page dedicada à sustentabilidade.
 
 ## Tecnologias Utilizadas
 
